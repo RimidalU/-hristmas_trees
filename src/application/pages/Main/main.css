@@ -1,0 +1,5 @@
+.main-img{
+  position: absolute;  
+  left: calc(50% - 210px);
+  top: 150px;  
+}

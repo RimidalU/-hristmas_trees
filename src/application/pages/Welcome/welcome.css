@@ -1,0 +1,95 @@
+.welcom-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: calc(100vh - 140px);
+}
+
+.ball {
+  width: 500px;
+  height: 500px;
+  left: -62px;
+  top: 150px;
+  background-image: url(../../../assets/ball/1.png);
+  position:relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: bounce;
+  animation-timing-function: linear;
+  align-self: flex-end;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.ball_2 {
+  animation-duration: 5s;
+  top: -50px;
+  width: 300px;
+  height: 305px;
+  left: 62px;
+  background-image: url(../../../assets/ball/2.png);
+}
+
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-150px); }
+  100% { transform: translateY(0); }
+}
+
+.welcome-title {
+  position: absolute;
+  z-index: 1;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: -100px;  
+  color: rgba(248, 3, 3, 0.541);
+  font-weight: 700;
+  text-align: center;
+  border: 3px solid #278D9F;
+  border-radius: 25px;
+  background-color: rgba(31, 112, 127, .3);
+  backdrop-filter: blur(6px);
+  font-size: 48px;
+}
+
+.start-btn{
+  position: absolute;
+  margin-top: 570px; 
+  width: 320px;
+  height: 60px;
+  border: 3px solid #278D9F;
+  border-radius: 30px;
+  background-color: rgba(31, 112, 127, .3);
+  backdrop-filter: blur(6px);
+  font-weight: 700;
+  font-size: 22px;
+  color: rgba(248, 3, 3, 0.726);
+  cursor: pointer;
+  transition: .3s;
+  overflow: hidden;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.start-btn:hover {
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+}
+
+.title-btn{
+  position: relative;
+  margin: 10px 110px;
+}
+

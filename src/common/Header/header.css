@@ -1,0 +1,35 @@
+.header-container {
+  background-color: #121C1E;
+}
+
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.header-link {
+  color: #fff;  
+  padding: 0 20px;  
+}
+
+.header-link:hover {
+  
+  filter: invert(57%) sepia(100%) saturate(329%) hue-rotate(
+    141deg) brightness(89%) contrast(90%);
+  color: #9f2727;  
+}
+
+.welcom-page{
+  width: 48px;
+    height: 60px;
+    background-image: url(../../assets/svg/tree.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: .3s;
+}

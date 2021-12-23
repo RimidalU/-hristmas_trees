@@ -1,0 +1,16 @@
+.error { 
+  position: relative;  
+  color: red;   
+  max-width: 600px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 220px;
+  margin-bottom: calc(100vh - 610px);
+  font-weight: 400;
+  text-align: center;
+  border: 3px solid #ff0000;
+  border-radius: 25px;
+  background-color: rgba(127, 31, 31, 0.3);
+  backdrop-filter: blur(6px);
+  font-size: 36px;
+}
